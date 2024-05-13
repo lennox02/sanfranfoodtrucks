@@ -1,11 +1,15 @@
-# Sample Snack app
+# San Fran Food Trucks
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+This is a React Native Project developed in snack.expo.dev
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+To try out the project please visit https://snack.expo.dev/@jameswebbdev/sanfranfoodtrucks?platform=ios
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## Usage
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+The project is designed to allow a user to see a map of SF, centered on Moscone center.  The user can drag the map, to move their position, which generates a new group of trucks within a .005 lat/longitudal raidus of the new position.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+The project is designed to be offline friendly, so if the app has been loaded once but is currenlty offline, it will retrieve a stored version of the Food Truck csv data.  It also will only grab a new version of the cvs once a day to avoid needless queries.
+
+The one feature that could not be implemented in a  2-3 hour timeframe was retrieving a users current location.  That requires configuration of device permission settings, which is unavailable on snack.expo.dev, so as a compromise the app simply starts centered on Moscone Center.
+
+If you have questions, please feel free to DM me on GitHub or LinkedIn
